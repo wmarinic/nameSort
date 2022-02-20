@@ -5,11 +5,11 @@ and orders them alphabetically by last name; outputting a new text file of the
 names in order.
 
 To compile this program:
-javac nameSort.java
+- javac nameSort.java
 
 To run this program:
-java main.nameSort <.txt file name>
+- java main.nameSort <.txt file name>
 
 To run the JUnit tests on nameSort:
-open nameSortTest.java in IDE
-click Run nameSortTest
+- open nameSortTest.java in IDE
+- click Run nameSortTest
