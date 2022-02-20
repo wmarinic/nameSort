@@ -1,4 +1,4 @@
-# nameSort
+# Name Sorter (Java)
  
 This program takes a text file containing a list of names (Last name, First name)
 and orders them alphabetically by last name; outputting a new text file of the
