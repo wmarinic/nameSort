@@ -114,9 +114,9 @@ public class nameSort {
 	 * @return void
 	 */
 	
-	public static void writeFile(ArrayList<Person> sortedNames) throws IOException {
+	public static void writeFile(ArrayList<Person> sortedNames, File fileName) throws IOException {
 		
-		FileWriter myWriter = new FileWriter("names-sorted.txt");
+		FileWriter myWriter = new FileWriter(fileName);
 		
 		for (Person obj: sortedNames) {
 			myWriter.write(obj.toString() + System.lineSeparator());
@@ -147,8 +147,9 @@ public class nameSort {
 		}
 		
 		// write sorted names to file
+		File outputFile = new File("names-sorted.txt");
 		try{
-			nameSort.writeFile(peopleList);
+			nameSort.writeFile(peopleList, outputFile);
 			System.out.println("Finished: created names-sorted.txt");
 		} catch (IOException e) {
 			System.out.println("An error occured.");
